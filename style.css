@@ -1,0 +1,29 @@
+.rec{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: solid 1px rgb(95, 95, 95);
+    text-align: center;
+    line-height: 40px;
+    box-shadow: inset 0px 0px 10px #2b2b2b;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.rec1{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: solid 1px rgb(95, 95, 95);
+    text-align: center;
+    line-height: 40px;
+    background-color: #bbb;
+}
+.row{
+    display: flex;
+}
+.ulTag{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
