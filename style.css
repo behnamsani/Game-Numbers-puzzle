@@ -8,6 +8,7 @@
     box-shadow: inset 0px 0px 10px #2b2b2b;
     font-size: 18px;
     font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
 }
 .rec1{
     list-style: none;
