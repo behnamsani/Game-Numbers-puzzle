@@ -1,13 +1,17 @@
 const ulTag = document.querySelector(".ulTag");
 const li = document.querySelectorAll(".rec");
+const btn = document.querySelector("#btnRand");
+const btnNew = document.querySelector("#btnNew");
+
 let xItem=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
 let yItem=["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"];
-const locationArr=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
-const locationArrSubmit=[];
+let locationArr=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
+let locationArrSubmit=[];
 let flag=false;
 
 ulTag.addEventListener("click" , move)
-random();
+btn.addEventListener("click",random);
+btnNew.addEventListener("click",again);
 
 function move (e){
     
@@ -1306,4 +1310,12 @@ function random(){
         console.log(locationArrSubmit);        
         console.log(locationArr);        
     })
+    locationArr=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
+    locationArrSubmit=[];
+    btn.setAttribute("disabled","true");
+    btn.style.background="#aaa";
+    btn.style.boxShadow="4px 4px 4px rgb(123, 122, 122)";
+}
+function again(){
+    location.reload();
 }
